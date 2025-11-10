@@ -29,10 +29,9 @@ export default function Navbar() {
   const handleLogout = () => {
     dispatch(logout());
     toast({ title: "Logged out", description: "See you soon!" });
-    router.replace("/login"); // client-side navigation keeps Redux state in sync
+    router.replace("/login");
   };
 
-  // Hide Navbar completely if user is not logged in
   if (!user) return null;
 
   return (

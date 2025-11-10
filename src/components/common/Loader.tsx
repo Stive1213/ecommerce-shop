@@ -1,7 +1,7 @@
 "use client";
 
-import { Loader2 } from "lucide-react"; // Optional: icon spinner
-import { cn } from "@/lib/utils"; // if you have a utility for classNames
+import { Loader2 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export const Loader = () => {
   return (

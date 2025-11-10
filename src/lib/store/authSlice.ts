@@ -6,7 +6,6 @@ interface AuthState {
   isAuthenticated: boolean;
 }
 
-// Read user from cookie if it exists
 const userFromCookie = Cookies.get("user")
   ? JSON.parse(Cookies.get("user")!)
   : null;
